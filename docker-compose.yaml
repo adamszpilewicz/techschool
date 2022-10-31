@@ -9,6 +9,6 @@ services:
       - POSTGRES_PASSWORD=secret
       - POSTGRES_DB=simple_bank
     ports:
-      - "5555:5432"
+      - "5432:5432"
     expose:
       - 5432
