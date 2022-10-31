@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+
+  postgres:
+    image: postgres:14-alpine
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_DB=simple_bank
+    ports:
+      - "5555:5432"
+    expose:
+      - 5432
